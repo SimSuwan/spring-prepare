@@ -1,15 +1,15 @@
 package com.metaverse.springprepare.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 //@Getter
 //@Setter // 값 변경(선택적요소) Getter 추가 시 무조건 함께 넣는 것 아님
-@NoArgsConstructor
-@AllArgsConstructor
+//@NoArgsConstructor
+//@AllArgsConstructor
+@RequiredArgsConstructor
 public class Memo {
-    private String username;
+    private final String username;
     private String content;
     private String description;
-    private String password;
+    private final String password;
 }
